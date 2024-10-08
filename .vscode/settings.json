@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Archer Circus.sln"
+    "dotnet.defaultSolution": "Archer-Circus.sln"
 }

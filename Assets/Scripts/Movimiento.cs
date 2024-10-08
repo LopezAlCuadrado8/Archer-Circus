@@ -2,14 +2,19 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float horizontal;
+    [Header("Movement")]
+    [SerializeField]
     private float speed = 8f;
+    [SerializeField]
     private float jumpingPower = 16f;
-    private bool isFacingRight = true;
-
+    
+    [Header("References")]
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+
+    private bool isFacingRight = true;
+    private float horizontal;
 
     void Update()
     {
